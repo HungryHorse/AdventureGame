@@ -19,6 +19,7 @@ public class SceneController : MonoBehaviour
         }
 
         instance = this;
+        DontDestroyOnLoad(gameObject);
 
         if (!string.IsNullOrEmpty(startScene))
             LoadScene(startScene);
